@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Camara</string>
+    <string name="action_settings">Action Settings</string>
+    <string name="im">im</string>
+    <string name="ver_img">ver_img</string>
+    <string name="title_activity_galeria">Galeria</string>
+    ////////////////////////////
+
+</resources>

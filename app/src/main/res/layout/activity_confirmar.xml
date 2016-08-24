@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.example.panda.camara.Confirmar"
+    android:textAlignment="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Estás en "
+        android:id="@+id/textView"
+        android:layout_alignTop="@+id/c_ciudad"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/c_ciudad"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView2"
+        android:layout_toRightOf="@+id/textView"
+        android:layout_toEndOf="@+id/textView" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:scaleX="0.7"
+        android:scaleY="0.7"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="viewEnd"
+        android:visibility="visible"
+        android:onClick="rank" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="REGRESAR"
+        android:id="@+id/b_cancelar"
+        android:onClick="cancelar"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/c_foto"
+        android:layout_toStartOf="@+id/c_foto" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Publicar"
+        android:id="@+id/b_publicar"
+        android:onClick="publicar"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/c_foto"
+        android:layout_toEndOf="@+id/c_foto" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/et_comentario"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_below="@+id/ratingBar"
+        android:layout_marginTop="39dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="¿Listo para publicar este lugar?"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/c_foto"
+        android:layout_below="@+id/c_ciudad"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="!Tu opinión es importante para nosotros !...Compartenos tu opnión de este lugar "
+        android:id="@+id/textView4"
+        android:textAlignment="inherit"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>
